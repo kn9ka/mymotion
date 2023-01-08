@@ -56,3 +56,9 @@
 
   gap: 16px;
 }
+
+.scrolldown {
+  position: fixed;
+  bottom: 16px;
+  z-index: 1;
+}

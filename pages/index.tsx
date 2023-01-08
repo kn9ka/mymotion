@@ -5,16 +5,25 @@ import { Open_Sans } from '@next/font/google';
 import { MySkills } from '@widgets/MySkills';
 import { Socials } from '@widgets/Socials';
 import { Gamer } from '@widgets/Gamer';
+import { Mouse } from '@shared/ui/Mouse';
 import styles from '../styles/Home.module.scss';
 
 const inter = Open_Sans({ subsets: ['latin'] });
 
+const isServer = typeof window === 'undefined';
+
 export default function Home() {
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (!isServer) {
       require('../shared/lib/webgl');
     }
   }, []);
+
+  const handleScroll = () => {
+    if (!isServer) {
+      window.scrollBy(0, window.innerHeight);
+    }
+  };
 
   return (
     <>
@@ -33,6 +42,9 @@ export default function Home() {
             <h1 className={inter.className}>
               Hi, I&apos;m Anton, I develop awesome websites!
             </h1>
+          </div>
+          <div className={styles.scrolldown}>
+            <Mouse onClick={handleScroll} />
           </div>
         </div>
         <div className={styles.block}>
