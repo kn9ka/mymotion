@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>knyaka</title>
         <meta name="description" content="knyaka" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <div className={styles.title}>
             <h1 className={inter.className}>
-              Hi, I'm Anton, I develop awesome websites!
+              Hi, I&apos;m Anton, I develop awesome websites!
             </h1>
           </div>
         </div>
@@ -39,8 +39,8 @@ export default function Home() {
           <h1 className={cn(inter.className, styles.description)}>
             Since beginning my journey as frontend developer over 5 years ago, I
             have collaborated with talented people to create digital products
-            for both businesses and consumers. I'm quietly confident, naturally
-            curious and constantly working to improve my skills
+            for both businesses and consumers. I&apos;m quietly confident,
+            naturally curious and constantly working to improve my skills
           </h1>
         </div>
         <div className={styles.block}>
