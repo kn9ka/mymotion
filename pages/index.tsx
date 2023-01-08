@@ -23,6 +23,7 @@ export default function Home() {
     if (!isServer) {
       require('../shared/lib/webgl');
 
+      setVH();
       window.addEventListener('resize', setVH);
     }
     return () => window.removeEventListener('resize', setVH);
