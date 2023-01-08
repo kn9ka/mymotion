@@ -1,0 +1,58 @@
+.canvas-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.canvas-wrapper canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  background: #0d0d0d;
+  padding: 0 16px;
+}
+
+.block {
+  height: 100vh;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  text-align: center;
+
+  overflow: scroll;
+}
+
+
+.title {
+  mix-blend-mode: exclusion;
+  position: relative;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.description {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+
+  gap: 16px;
+}

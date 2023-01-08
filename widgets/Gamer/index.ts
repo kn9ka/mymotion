@@ -1,0 +1,1 @@
+export { Gamer } from './Gamer';
