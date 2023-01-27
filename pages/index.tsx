@@ -6,15 +6,12 @@ import { Socials } from '@widgets/Socials';
 import { Gamer } from '@widgets/Gamer';
 import { SmokeWebGL } from '@widgets/SmokeWebGL';
 import { ScrollDown } from '@shared/ui/ScrollDown';
-import { useViewportHeightUpdate } from '@shared/hooks';
 
 import styles from '../styles/Home.module.scss';
 
 const inter = Open_Sans({ subsets: ['latin'] });
 
 export default function Home() {
-  useViewportHeightUpdate();
-
   return (
     <>
       <Head>
