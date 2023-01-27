@@ -35,6 +35,10 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
+  &.withoutMaxWidth {
+    max-width: none;
+  }
 }
 
 

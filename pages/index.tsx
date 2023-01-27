@@ -24,7 +24,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={cn(styles.main, inter.className)}>
-        <section id="webgl" className={styles.section}>
+        <section
+          id="webgl"
+          className={cn(styles.section, styles.withoutMaxWidth)}
+        >
           <div className={styles.canvasWrapper}>
             <SmokeWebGL />
           </div>
