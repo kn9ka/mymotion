@@ -1,0 +1,39 @@
+.container {
+	z-index: 1;
+	cursor: pointer;
+	position: absolute;
+  bottom: 32px;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+  animation: shake 4.72s ease infinite;
+
+	:after {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		content: '';
+		width: 16px;
+		height: 16px;
+		margin: -12px 0 0 -8px;
+		border-left: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		transform: rotate(-45deg);
+		box-sizing: border-box;
+	}
+}
+
+@keyframes shake {
+  0% { transform:translate(0,0) }
+  1.78571% { transform:translate(5px,0) }
+  3.57143% { transform:translate(0,0) }
+  5.35714% { transform:translate(5px,0) }
+  7.14286% { transform:translate(0,0) }
+  8.92857% { transform:translate(5px,0) }
+  10.71429% { transform:translate(0,0) }
+  100% { transform:translate(0,0) }
+}

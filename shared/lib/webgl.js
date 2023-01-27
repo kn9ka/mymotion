@@ -22,7 +22,7 @@ SOFTWARE.
 
 // Simulation section
 let document = window.document;
-const canvas = document.getElementsByTagName('canvas')[0];
+const canvas = document.getElementById('smoke-webgl');
 resizeCanvas();
 
 let config = {
