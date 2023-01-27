@@ -1,3 +1,4 @@
+import { SyntheticEvent } from 'react';
 import styles from './styles.module.scss';
 
 export const ScrollDown = ({
@@ -7,7 +8,7 @@ export const ScrollDown = ({
   onClick?: () => any;
   href?: string;
 }) => {
-  const handleClick = (e) => {
+  const handleClick = (e: SyntheticEvent) => {
     e.preventDefault();
 
     if (href) {
