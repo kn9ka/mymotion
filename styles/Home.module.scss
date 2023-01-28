@@ -16,10 +16,10 @@
 
 .section {
   position: relative;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height: calc(100vh - env(safe-area-inset-bottom));
   width: 100%;
   max-width: 1180px;
+  min-height: -webkit-fill-available;
   margin: 0 auto;
   display: flex;
   flex-flow: column wrap;
