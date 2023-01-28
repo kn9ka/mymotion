@@ -1,12 +1,12 @@
 .container {
 	z-index: 1;
 	cursor: pointer;
-	position: absolute;
-  bottom: 32px;
-  left: 50%;
+	position: sticky;
+  position: -webkit-sticky;
+  top: 80%;
+
   width: 46px;
   height: 46px;
-  margin-left: -23px;
   border: 1px solid #fff;
   border-radius: 100%;
   box-sizing: border-box;

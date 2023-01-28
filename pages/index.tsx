@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useEffect } from 'react';
 import cn from 'classnames';
 import { Open_Sans } from '@next/font/google';
 import { MySkills } from '@widgets/MySkills';
