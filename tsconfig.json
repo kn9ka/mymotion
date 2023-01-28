@@ -16,6 +16,8 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "@app/*": ["app/*"],
+      "@pagesLayer/*": ["pagesLayer/*"],
       "@shared/*": ["shared/*"],
       "@widgets/*": ["widgets/*"],
       "@config/*": ["config/*"]

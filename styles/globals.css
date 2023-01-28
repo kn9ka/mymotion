@@ -15,7 +15,6 @@ body {
 
 body {
   color: rgb(255, 255, 255);
-  padding-bottom: env(safe-area-inset-bottom);
 }
 
 a {
