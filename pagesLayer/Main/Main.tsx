@@ -21,14 +21,14 @@ export const Main = () => {
         </div>
         <div className={styles.title}>
           <h1 className={inter.className}>
-            Hi, I&apos;m Anton, I develop awesome websites!
+            Hi, I&apos;m Anton, I'm developing awesome websites!
           </h1>
         </div>
         <ScrollDown href="#description" />
       </section>
       <section id="description" className={styles.section}>
         <h1 className={cn(inter.className, styles.description)}>
-          Since beginning my journey as frontend developer over 5 years ago, I
+          Since beginning my journey as frontend developer over 6 years ago, I
           have collaborated with talented people to create digital products for
           both businesses and consumers. I&apos;m quietly confident, naturally
           curious and constantly working to improve my skills
