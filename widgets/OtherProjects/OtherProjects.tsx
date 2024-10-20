@@ -28,6 +28,11 @@ export const OtherProjects = () => {
           </a>
         </li>
         <li className={styles.mb8}>
+          <a className={styles.colored} href="/vocabulary-trainer/">
+            Vocabulary trainer
+          </a>
+        </li>
+        <li className={styles.mb8}>
           <a
             className={styles.colored}
             href="https://product-list-lime.vercel.app"
