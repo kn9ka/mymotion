@@ -6,6 +6,7 @@ import { Gamer } from '@widgets/Gamer';
 import { SmokeWebGL } from '@widgets/SmokeWebGL';
 import { ScrollDown } from '@shared/ui/ScrollDown';
 import styles from './styles.module.scss';
+import { OtherProjects } from '@widgets/OtherProjects/OtherProjects';
 
 const inter = Open_Sans({ subsets: ['latin'] });
 
@@ -42,6 +43,9 @@ export const Main = () => {
       </section>
       <section id="socials" className={styles.section}>
         <Socials />
+      </section>
+      <section id="other-projects" className={styles.section}>
+        <OtherProjects />
       </section>
     </main>
   );
