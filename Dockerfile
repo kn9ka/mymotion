@@ -29,6 +29,6 @@ COPY --from=build /app/public /app/public
 
 COPY package.json /app
 
-EXPOSE 3000
+EXPOSE 80
 ENV NODE_ENV production
 CMD ["npm", "run", "start"]
