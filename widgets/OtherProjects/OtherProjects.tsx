@@ -18,17 +18,23 @@ export const OtherProjects = () => {
           </a>
         </li>
         <li className={styles.mb8}>
-          <a className={styles.colored} href="/exchange-rates/">
+          <a
+            className={styles.colored}
+            href="https://exchange-rates.knyaka.dev"
+          >
             Exchange rates
           </a>
         </li>
         <li className={styles.mb8}>
-          <a className={styles.colored} href="/voice-memos/">
+          <a className={styles.colored} href="https://voice-memos.knyaka.dev">
             Voice memos
           </a>
         </li>
         <li className={styles.mb8}>
-          <a className={styles.colored} href="/vocabulary-trainer/">
+          <a
+            className={styles.colored}
+            href="https://vocabulary-trainer.knyaka.dev"
+          >
             Vocabulary trainer
           </a>
         </li>
