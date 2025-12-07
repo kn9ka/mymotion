@@ -1,4 +1,4 @@
-import cn from 'classnames';
+import { clsx } from 'clsx';
 import Image from 'next/image';
 import styles from './styles.module.scss';
 
@@ -47,7 +47,7 @@ export const Socials = () => {
           <Image src="/socials/steam.svg" width={40} height={40} alt="" />
         </a>
         <a
-          className={cn(styles.network, styles.square)}
+          className={clsx(styles.network, styles.square)}
           href="https://career.habr.com/kn9ka"
           target="_blank"
           rel="noreferrer"

@@ -1,5 +1,5 @@
-import cn from 'classnames';
-import { Open_Sans } from '@next/font/google';
+import { clsx } from 'clsx';
+import { Open_Sans } from 'next/font/google';
 import { MySkills } from '@widgets/MySkills';
 import { Socials } from '@widgets/Socials';
 import { Gamer } from '@widgets/Gamer';
@@ -12,10 +12,10 @@ const inter = Open_Sans({ subsets: ['latin'] });
 
 export const Main = () => {
   return (
-    <main className={cn(styles.main, inter.className)}>
+    <main className={clsx(styles.main, inter.className)}>
       <section
         id="webgl"
-        className={cn(styles.section, styles.withoutMaxWidth)}
+        className={clsx(styles.section, styles.withoutMaxWidth)}
       >
         <div className={styles.canvasWrapper}>
           <SmokeWebGL />
@@ -28,7 +28,7 @@ export const Main = () => {
         <ScrollDown href="#description" />
       </section>
       <section id="description" className={styles.section}>
-        <h1 className={cn(inter.className, styles.description)}>
+        <h1 className={clsx(inter.className, styles.description)}>
           Since beginning my journey as frontend developer over 6 years ago, I
           have collaborated with talented people to create digital products for
           both businesses and consumers. I&apos;m quietly confident, naturally

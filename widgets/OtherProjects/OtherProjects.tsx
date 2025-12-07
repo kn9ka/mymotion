@@ -1,11 +1,11 @@
 import { Column } from '@shared/ui';
-import cn from 'classnames';
+import { clsx } from 'clsx';
 import styles from './styles.module.scss';
 
 export const OtherProjects = () => {
   return (
     <Column>
-      <span className={cn(styles.title, styles.mb16)}>My projects</span>
+      <span className={clsx(styles.title, styles.mb16)}>My projects</span>
       <ul className={styles.list}>
         <li className={styles.mb8}>
           <a className={styles.colored} href="https://1cebit.com">

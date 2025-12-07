@@ -1,15 +1,15 @@
-import cn from 'classnames';
+import { clsx } from 'clsx';
 import { Column } from '@shared/ui';
 import styles from './styles.module.scss';
 
 export const Gamer = () => {
   return (
     <Column>
-      <span className={cn(styles.title, styles.mb16)}>Hardcore Gamer</span>
-      <p className={cn(styles.text, styles.mb24)}>
+      <span className={clsx(styles.title, styles.mb16)}>Hardcore Gamer</span>
+      <p className={clsx(styles.text, styles.mb24)}>
         The rest of my free time I devote entirely to games and communities
       </p>
-      <p className={cn(styles.text, styles.colored, styles.mb8)}>
+      <p className={clsx(styles.text, styles.colored, styles.mb8)}>
         Games I play
       </p>
       <ul className={styles.list}>
