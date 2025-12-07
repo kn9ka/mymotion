@@ -8,7 +8,7 @@ export const OtherProjects = () => {
       <span className={clsx(styles.title, styles.mb16)}>My projects</span>
       <ul className={styles.list}>
         <li className={styles.mb8}>
-          <a className={styles.colored} href="https://1cebit.com">
+          <a className={styles.colored} href="https://gk.exchange">
             Crypto Exchange
           </a>
         </li>
