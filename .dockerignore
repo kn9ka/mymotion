@@ -1,0 +1,10 @@
+node_modules
+build
+.git
+.gitignore
+.react-router
+.agents
+.zed
+npm-debug.log*
+Dockerfile
+README.md

@@ -1,0 +1,61 @@
+{
+  "plugins": ["typescript", "import", "react", "jsx-a11y"],
+  "env": {
+    "browser": true
+  },
+  "options": {
+    "typeAware": true
+  },
+  "settings": {
+    "react": {
+      "linkComponents": [
+        {
+          "name": "Link",
+          "attributes": ["to", "href"]
+        },
+        {
+          "name": "NavLink",
+          "attributes": ["to", "href"]
+        }
+      ]
+    }
+  },
+  "rules": {
+    "eslint/curly": ["error", "all"],
+    "eslint/no-nested-ternary": "error",
+    "eslint/max-params": ["warn", { "max": 3 }],
+    "eslint/no-unused-vars": ["warn", { "caughtErrors": "none" }],
+    "eslint/no-console": "warn",
+    "import/no-cycle": "error",
+    "typescript/no-explicit-any": "error",
+    "typescript/no-floating-promises": "off",
+    "typescript/no-non-null-asserted-optional-chain": "error",
+    "typescript/unbound-method": "off",
+    "typescript/no-unnecessary-condition": "error",
+    "typescript/triple-slash-reference": "off",
+    "typescript/consistent-type-imports": [
+      "error",
+      {
+        "disallowTypeAnnotations": false,
+        "fixStyle": "inline-type-imports",
+        "prefer": "type-imports"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.{ts,tsx}"],
+      "rules": {
+        "no-shadow": "warn"
+      }
+    }
+  ],
+  "ignorePatterns": [
+    ".react-router/**/*",
+    "**/*.md",
+    "**/*.mdx",
+    "public/*",
+    "dist/*",
+    "node_modules/*"
+  ]
+}

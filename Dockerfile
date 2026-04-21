@@ -1,34 +1,37 @@
-FROM node:21.6.1-alpine as node-package
+FROM node:24-alpine AS base
 
 WORKDIR /app
 
-COPY package.json /app
-COPY package-lock.json /app
+FROM base AS deps
+
+COPY package.json package-lock.json ./
 
 RUN npm ci
 
-FROM node-package AS build
+FROM base AS prod-deps
 
-WORKDIR /app
+COPY package.json package-lock.json ./
 
-COPY . /app
+RUN npm ci --omit=dev
+
+FROM deps AS build
+
+COPY . .
 
 RUN npm run build
 
-FROM node-package as node-prod
+FROM base AS runtime
 
-WORKDIR /app
+ENV NODE_ENV=production
+ENV HOST=0.0.0.0
+ENV PORT=3000
 
-FROM node:21.6.1-alpine
+COPY --from=prod-deps /app/node_modules ./node_modules
+COPY --from=build /app/build ./build
+COPY package.json ./
 
-WORKDIR /app
+EXPOSE 3000
 
-COPY --from=node-prod /app/node_modules /app/node_modules
-COPY --from=build /app/.next /app/.next
-COPY --from=build /app/public /app/public
+HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 CMD ["node", "-e", "const port = process.env.PORT || 3000; const url = `http://127.0.0.1:${port}/health`; fetch(url, { cache: 'no-store' }).then((res) => { if (!res.ok) process.exit(1); }).catch(() => process.exit(1));"]
 
-COPY package.json /app
-
-EXPOSE 80
-ENV NODE_ENV production
-CMD ["npm", "run", "start"]
+CMD ["./node_modules/.bin/react-router-serve", "build/server/index.js"]

@@ -1,0 +1,60 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "singleQuote": true,
+  "printWidth": 80,
+  "sortImports": {
+    "customGroups": [
+      {
+        "groupName": "pages",
+        "elementNamePattern": ["@/pages/**"]
+      },
+      {
+        "groupName": "widgets",
+        "elementNamePattern": ["@/widgets/**"]
+      },
+      {
+        "groupName": "features",
+        "elementNamePattern": ["@/features/**"]
+      },
+      {
+        "groupName": "entities",
+        "elementNamePattern": ["@/entities/**"]
+      },
+      {
+        "groupName": "shared",
+        "elementNamePattern": ["@/shared/**"]
+      },
+      {
+        "groupName": "generated",
+        "elementNamePattern": ["@/generated/**"]
+      }
+    ],
+    "groups": [
+      ["type-external", "value-external"],
+      ["type-builtin", "value-builtin"],
+      "generated",
+      "pages",
+      "widgets",
+      "features",
+      "entities",
+      "shared",
+      ["type-internal", "value-internal"],
+      ["type-sibling", "type-parent", "value-sibling", "value-parent"],
+      ["type-index", "value-index"],
+      "style",
+      "unknown"
+    ]
+  },
+  "sortPackageJson": {
+    "sortScripts": true
+  },
+  "overrides": [
+    {
+      "files": ["**/*.json", "**/*.jsonc"],
+      "options": {
+        "trailingComma": "none"
+      }
+    }
+  ],
+  "ignorePatterns": ["build/*", "public"]
+}

@@ -1,28 +1,49 @@
 {
   "name": "mymotion",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "react-router build",
+    "build:dev": "react-router build --mode development",
+    "dev": "react-router dev",
+    "fmt": "oxfmt",
+    "lint": "oxlint .",
+    "lint:style": "stylelint \"**/*.css\"",
+    "start": "react-router-serve build/server/index.js",
+    "types": "react-router typegen && oxlint --type-aware --type-check",
+    "upgrade-interactive": "npx npm-check-updates --interactive --format group"
   },
   "dependencies": {
-    "@next/third-parties": "^16.0.7",
-    "@types/node": "18.11.18",
-    "@types/react": "18.0.26",
-    "@types/react-dom": "18.0.10",
+    "@fontsource-variable/noto-sans": "^5.2.10",
+    "@fontsource-variable/playfair-display": "^5.2.8",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@react-router/node": "^7.14.1",
+    "@react-router/serve": "^7.14.1",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "eslint": "8.31.0",
-    "eslint-config-next": "13.1.1",
-    "next": "^16.0.7",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "^5.9.3"
+    "cobe": "^2.0.1",
+    "framer-motion": "^12.38.0",
+    "isbot": "^5",
+    "lucide-react": "^1.8.0",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "react-router": "^7.14.1",
+    "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
-    "prettier": "^2.8.2",
-    "sass": "^1.57.1"
+    "@react-router/dev": "^7.14.1",
+    "@tailwindcss/vite": "^4.2.2",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "oxfmt": "^0.45.0",
+    "oxlint": "^1.60.0",
+    "oxlint-tsgolint": "^0.21.1",
+    "stylelint": "^17.8.0",
+    "stylelint-config-standard": "^40.0.0",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.8"
   }
 }

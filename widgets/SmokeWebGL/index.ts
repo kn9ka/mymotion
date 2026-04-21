@@ -1,1 +1,0 @@
-export { SmokeWebGL } from './SmokeWebGL';

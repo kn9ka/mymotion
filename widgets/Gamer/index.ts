@@ -1,1 +1,0 @@
-export { Gamer } from './Gamer';
