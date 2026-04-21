@@ -3,7 +3,6 @@ import { AnimatedNavFramer } from '@/shared/ui/shadcn/navigation-menu';
 import { Experience } from './Experience';
 import { Gamer } from './Gamer';
 import { OtherProjects } from './OtherProjects';
-import { SmokeWebGL } from './SmokeWebGL';
 import { Socials } from './Socials';
 
 export const Index = () => {
@@ -19,10 +18,6 @@ export const Index = () => {
           id="webgl"
           className={`${sectionClassName} max-w-none min-h-dvh`}
         >
-          {/*<div className="absolute inset-0 z-1 h-full w-full overflow-hidden">
-            <SmokeWebGL />
-          </div>*/}
-
           <div className="pointer-events-none relative z-1">
             <h1 className="text-3xl text-center">
               Hi, I&apos;m Anton. I build systems, not pages.

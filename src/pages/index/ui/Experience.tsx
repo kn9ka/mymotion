@@ -6,22 +6,38 @@ const timeline = [
     role: 'Senior Frontend Engineer',
     company: 'Holland & Barrett',
     points: [
-      'FSD rollout (RFC, templates, CI).',
-      'Next.js → Remix rewrite.',
-      'SSR/hydration fixes, unified rendering.',
+      'FSD rollout (RFC, templates, lint, CI) → defects ↓ ~70%.',
+      'Next.js → Remix / React Router rewrite for SSR builder.',
+      'SSR & hydration fixes; unified server/client rendering.',
+      'Centralized data layer (TanStack/GraphQL) aligned to FSD.',
+      'Codegen tooling → boilerplate ↓ ~80–90%, PR lead time ↓ ~35%.',
+      'Multi-repo delivery (5+ apps); standardized CI/release cadence.',
     ],
   },
   {
     period: '2023 - 2024',
     role: 'Frontend Developer',
     company: 'Impress',
-    points: ['Priority booking, scheduler.', 'RBAC, i18n workflow.'],
+    points: [
+      'Priority booking → wait time ↓ 10%, no-shows ↓ 30%.',
+      'Custom multi-view scheduler (week/day/month).',
+      'RBAC (permit.io) + audit scopes; safer access model.',
+      'i18n at scale (Lokalise) → localization lead time ↓ 50%.',
+      'Cross-stack delivery (FE + NestJS/Go); stronger typing.',
+    ],
   },
   {
     period: '2019 - 2023',
     role: 'Senior Web Developer',
     company: 'Domclick',
-    points: ['Monorepo, shared UI.', 'Loan features, support ↓.'],
+    points: [
+      'Monorepo (CRM + Portal) + shared UI → duplication ↓ 50%.',
+      'Loan flows → support ↓ 90%, issuance 30d → 30m.',
+      'TypeScript adoption → runtime defects ↓ 30%.',
+      'Webpack 3→5 → bundle ↓ 40%, build time ↓ 50%.',
+      'Forms: Redux-Form → Final-Form → error rate ↓ 30%.',
+      'Testing (Jest) → coverage ~79%, regressions ↓ 80%+.',
+    ],
   },
 ];
 
